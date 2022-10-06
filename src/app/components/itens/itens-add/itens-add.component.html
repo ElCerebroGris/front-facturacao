@@ -1,0 +1,114 @@
+<!-- start page title -->
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right"></div>
+      <h4 class="page-title">Novo Item</h4>
+    </div>
+  </div>
+</div>
+<!-- end page title -->
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-date" class="form-label">Código</label>
+              <input
+                class="form-control"
+                id="example-date"
+                type="text"
+                name="name"
+              />
+            </div>
+          </div>
+
+
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-date" class="form-label">Preço Unitário</label>
+              <input
+                class="form-control"
+                id="example-date"
+                type="text"
+                name="name"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-date" class="form-label">PVP</label>
+              <input
+                class="form-control"
+                id="example-date"
+                type="text"
+                name="name"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-select" class="form-label">Taxa/IVA</label>
+              <select class="form-select" id="example-select">
+                <option>14.00% - Taxa14</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-select" class="form-label">Unidade</label>
+              <select class="form-select" id="example-select">
+                <option>Serviço</option>
+                <option>Unidade</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-select" class="form-label">Retenção</label>
+              <select class="form-select" id="example-select">
+                <option>Aplicar</option>
+                <option>Não Aplicar</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="my-1">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+                <label for="floatingTextarea2">Descrição</label>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="card-footer">
+        <div class="d-flex flex-wrap align-items-center justify-content-sm-end">
+          <button [routerLink]="['/itens']" routerLinkActive="router-link-active"  type="button" class="btn btn-dark btn-lg mx-2">
+            Cancelar
+          </button>
+
+          <button (click)="salvar()" type="button" class="btn btn-success btn-lg">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end row -->

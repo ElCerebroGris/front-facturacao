@@ -1,0 +1,268 @@
+<!-- start page title -->
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right"></div>
+      <h4 class="page-title">Nova Proforma</h4>
+    </div>
+  </div>
+</div>
+<!-- end page title -->
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-12">
+            <div>
+              <label for="example-select" class="form-label">Cliente</label>
+              <select class="form-select" id="example-select">
+                <option>Cliente final</option>
+                <option>João</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <h4>Detalhes do Documento</h4>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-date" class="form-label">Data</label>
+              <input
+                class="form-control"
+                id="example-date"
+                type="date"
+                name="date"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-select" class="form-label">Vencimento</label>
+              <select class="form-select" id="example-select">
+                <option>Pronto pagamento</option>
+                <option>15 dias</option>
+                <option>30 dias</option>
+                <option>45 dias</option>
+                <option>60 dias</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-fileinput" class="form-label">V/Ref</label>
+              <input type="text" id="example-fileinput" class="form-control" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-select" class="form-label">Série</label>
+              <select class="form-select" id="example-select">
+                <option>2022</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-select" class="form-label">Moeda</label>
+              <select class="form-select" id="example-select">
+                <option>AOA</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="my-1">
+              <label for="example-fileinput" class="form-label"
+                >Retenção: (%)</label
+              >
+              <input type="text" id="example-fileinput" class="form-control" />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="my-1">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+                <label for="floatingTextarea2">Observação</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Itens*</h4>
+        <hr />
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="table-responsive">
+              <table class="table table-striped mb-0">
+                <thead>
+                  <tr>
+                    <th>Código</th>
+                    <th>Descrição</th>
+                    <th>Preço unitário</th>
+                    <th>Qtd</th>
+                    <th>Imposto/IVA</th>
+                    <th>Desc.%</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>
+                      <input
+                        type="text"
+                        value="1"
+                        id="example-fileinput"
+                        class="form-control"
+                      />
+                    </td>
+                    <td>
+                      <select class="form-select" id="example-select">
+                        <option>2022</option>
+                      </select>
+                    </td>
+                    <td>
+                      <div class="row">
+                        <div class="col-9">
+                          <input
+                            type="text"
+                            value="0.0"
+                            id="example-fileinput"
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="col-3">
+                          <button type="button" class="btn btn-success btn-xs">
+                            <i class="mdi mdi-close"></i>
+                          </button>
+                        </div>
+                      </div>
+
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-lg-11">
+            <div class="my-1">
+              <select class="form-select" id="example-select">
+                <option>2022</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-1">
+            <div class="my-1">
+              <button
+                [routerLink]="['/facturas-add']"
+                routerLinkActive="router-link-active"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#custom-modal"
+              >
+                <i class="mdi mdi-plus-circle me-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="table-responsive">
+              <table class="table mb-0">
+                <thead>
+                  <tr>
+                    <th>Taxa/IVA</th>
+                    <th>Incidência</th>
+                    <th>Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Taxa14 (14.00%)</th>
+                    <td>20.000 Kz</td>
+                    <td>2800 Kz</td>
+                  </tr>
+                  <tr>
+                    <th>Isento (0%)</th>
+                    <td>20.000 Kz</td>
+                    <td>0 Kz</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+            <div class="table-responsive">
+              <table class="table table-borderless mb-0">
+                <thead>
+                  <tr>
+                    <th>Sumário</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Soma</td>
+                    <td>0 Kz</td>
+                  </tr>
+                  <tr>
+                    <td>Desconto</td>
+                    <td>0 Kz</td>
+                  </tr>
+                  <tr>
+                    <td>Retenção</td>
+                    <td>0 Kz</td>
+                  </tr>
+                  <tr>
+                    <td>S/Imposto</td>
+                    <td>0 Kz</td>
+                  </tr>
+                  <tr>
+                    <td>Imposto</td>
+                    <td>0 Kz</td>
+                  </tr>
+
+                  <tr>
+                    <th>Total</th>
+                    <th>0 Kz</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="d-flex flex-wrap align-items-center justify-content-sm-end">
+          <button [routerLink]="['/proformas']" routerLinkActive="router-link-active"  type="button" class="btn btn-dark btn-lg mx-2">
+            Cancelar
+          </button>
+
+          <button (click)="salvar()" type="button" class="btn btn-success btn-lg">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end row -->
