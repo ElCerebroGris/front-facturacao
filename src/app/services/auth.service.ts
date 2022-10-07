@@ -77,7 +77,7 @@ export class AuthService {
     this.showMenu.emit(true);
     if (usuario.tipo_user == 1) this.showMenuLateral.emit(true);
     window.location.reload();
-    this.router.navigate(['/']);
+    this.router.navigate(['/geral']);
   }
 
   logout() {
