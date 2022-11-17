@@ -11,11 +11,14 @@ import { ItensListComponent } from './components/itens/itens-list/itens-list.com
 import { ProformasAddComponent } from './components/proformas/proformas-add/proformas-add.component';
 import { ProformasListComponent } from './components/proformas/proformas-list/proformas-list.component';
 import { RelatoriosListComponent } from './components/relatorios/relatorios-list/relatorios-list.component';
+import { ContaComponent } from './components/user/conta/conta.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { AuthGuard } from './helpers/auth.guard';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
+  {path: 'conta', component: ContaComponent,
+  canActivate: [AuthGuard]},
   {path: '', redirectTo: '/geral', pathMatch: 'full'},
   {path: 'geral', component: GeralComponent,
   canActivate: [AuthGuard]},

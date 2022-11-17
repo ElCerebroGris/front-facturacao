@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FacturaListComponent } from './components/factura/factura-list/factura-list.component';
-import { GeralComponent } from './components/geral/geral.component';
 import { FacturaAddComponent } from './components/factura/factura-add/factura-add.component';
 import { ClientesListComponent } from './components/clientes/clientes-list/clientes-list.component';
 import { ClientesAddComponent } from './components/clientes/clientes-add/clientes-add.component';
@@ -26,12 +25,16 @@ import { JwtInterceptor } from './helpers/JwtInterceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContaComponent } from './components/user/conta/conta.component';
+import { SaldoContaComponent } from './components/user/conta-tabs/saldo-conta/saldo-conta.component';
+import { DadosFacturacaoComponent } from './components/user/conta-tabs/dados-facturacao/dados-facturacao.component';
+import { MeuPerfilComponent } from './components/user/conta-tabs/meu-perfil/meu-perfil.component';
+import { GerirUtilizadoresComponent } from './components/user/conta-tabs/gerir-utilizadores/gerir-utilizadores.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FacturaListComponent,
-    GeralComponent,
     FacturaAddComponent,
     ClientesListComponent,
     ClientesAddComponent,
@@ -43,7 +46,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UserContaComponent,
     LoginComponent,
     RegisterComponent,
-    RelatoriosListComponent
+    RelatoriosListComponent,
+    ContaComponent,
+    SaldoContaComponent,
+    DadosFacturacaoComponent,
+    MeuPerfilComponent,
+    GerirUtilizadoresComponent
   ],
   imports: [
     BrowserModule,
